@@ -20,17 +20,17 @@
     
     
     <meta name="keywords" content="torake,ubuntu,linux,cgi,nginx,automatice">
-    <meta name="description" content="配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-libraryhttps://answers.launchpad.net/esys-particle/+ques">
+    <meta name="description" content="title: any-cgi-script–nginx–ubuntu16date: 2017-09-30 15:04:47 tags: [torake, ubuntu, linux, cgi, nginx, automatice]配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu">
 <meta name="keywords" content="torake,ubuntu,linux,cgi,nginx,automatice">
 <meta property="og:type" content="article">
 <meta property="og:title" content="any-cgi-script--nginx--ubuntu16">
 <meta property="og:url" content="http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/index.html">
 <meta property="og:site_name" content="doc2git.com">
-<meta property="og:description" content="配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-libraryhttps://answers.launchpad.net/esys-particle/+ques">
-<meta property="og:updated_time" content="2017-09-30T07:13:34.479Z">
+<meta property="og:description" content="title: any-cgi-script–nginx–ubuntu16date: 2017-09-30 15:04:47 tags: [torake, ubuntu, linux, cgi, nginx, automatice]配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu">
+<meta property="og:updated_time" content="2017-09-30T07:10:51.222Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="any-cgi-script--nginx--ubuntu16">
-<meta name="twitter:description" content="配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-libraryhttps://answers.launchpad.net/esys-particle/+ques">
+<meta name="twitter:description" content="title: any-cgi-script–nginx–ubuntu16date: 2017-09-30 15:04:47 tags: [torake, ubuntu, linux, cgi, nginx, automatice]配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/style.css?v=1.6.14">
@@ -168,7 +168,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持"><span class="post-toc-number">1.</span> <span class="post-toc-text">配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#http-xfeng-me-nginx-support-fcgi"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">http://xfeng.me/nginx-support-fcgi/</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library"><span class="post-toc-number">1.1.0.1.</span> <span class="post-toc-text">https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#https-answers-launchpad-net-esys-particle-question-365307"><span class="post-toc-number">1.1.0.2.</span> <span class="post-toc-text">https://answers.launchpad.net/esys-particle/+question/365307</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#http-www-jb51-net-article-106375-htm"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">http://www.jb51.net/article/106375.htm</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#tags-torake-ubuntu-linux-cgi-nginx-automatice"><span class="post-toc-number">1.</span> <span class="post-toc-text">tags: [torake, ubuntu, linux, cgi, nginx, automatice]</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持"><span class="post-toc-number"></span> <span class="post-toc-text">配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#http-xfeng-me-nginx-support-fcgi"><span class="post-toc-number">1.</span> <span class="post-toc-text">http://xfeng.me/nginx-support-fcgi/</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#https-answers-launchpad-net-esys-particle-question-365307"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">https://answers.launchpad.net/esys-particle/+question/365307</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#http-www-jb51-net-article-106375-htm"><span class="post-toc-number">2.</span> <span class="post-toc-text">http://www.jb51.net/article/106375.htm</span></a></li></ol>
         </nav>
     </aside>
     
@@ -191,14 +191,15 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持"><a href="#配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持" class="headerlink" title="配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持"></a>配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持</h1><h2 id="http-xfeng-me-nginx-support-fcgi"><a href="#http-xfeng-me-nginx-support-fcgi" class="headerlink" title="http://xfeng.me/nginx-support-fcgi/"></a><a href="http://xfeng.me/nginx-support-fcgi/" target="_blank" rel="external">http://xfeng.me/nginx-support-fcgi/</a></h2><h4 id="https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library"><a href="#https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library" class="headerlink" title="https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library"></a><a href="https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library" target="_blank" rel="external">https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library</a></h4><h4 id="https-answers-launchpad-net-esys-particle-question-365307"><a href="#https-answers-launchpad-net-esys-particle-question-365307" class="headerlink" title="https://answers.launchpad.net/esys-particle/+question/365307"></a><a href="https://answers.launchpad.net/esys-particle/+question/365307" target="_blank" rel="external">https://answers.launchpad.net/esys-particle/+question/365307</a></h4><h2 id="http-www-jb51-net-article-106375-htm"><a href="#http-www-jb51-net-article-106375-htm" class="headerlink" title="http://www.jb51.net/article/106375.htm"></a><a href="http://www.jb51.net/article/106375.htm" target="_blank" rel="external">http://www.jb51.net/article/106375.htm</a></h2>
+            <p>title: any-cgi-script–nginx–ubuntu16<br>date: 2017-09-30 15:04:47</p>
+<h2 id="tags-torake-ubuntu-linux-cgi-nginx-automatice"><a href="#tags-torake-ubuntu-linux-cgi-nginx-automatice" class="headerlink" title="tags: [torake, ubuntu, linux, cgi, nginx, automatice]"></a>tags: [torake, ubuntu, linux, cgi, nginx, automatice]</h2><h1 id="配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持"><a href="#配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持" class="headerlink" title="配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持"></a>配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持</h1><h2 id="http-xfeng-me-nginx-support-fcgi"><a href="#http-xfeng-me-nginx-support-fcgi" class="headerlink" title="http://xfeng.me/nginx-support-fcgi/"></a><a href="http://xfeng.me/nginx-support-fcgi/" target="_blank" rel="external">http://xfeng.me/nginx-support-fcgi/</a></h2><h4 id="https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library"><a href="#https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library" class="headerlink" title="https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library"></a><a href="https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library" target="_blank" rel="external">https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library</a></h4><h4 id="https-answers-launchpad-net-esys-particle-question-365307"><a href="#https-answers-launchpad-net-esys-particle-question-365307" class="headerlink" title="https://answers.launchpad.net/esys-particle/+question/365307"></a><a href="https://answers.launchpad.net/esys-particle/+question/365307" target="_blank" rel="external">https://answers.launchpad.net/esys-particle/+question/365307</a></h4><h2 id="http-www-jb51-net-article-106375-htm"><a href="#http-www-jb51-net-article-106375-htm" class="headerlink" title="http://www.jb51.net/article/106375.htm"></a><a href="http://www.jb51.net/article/106375.htm" target="_blank" rel="external">http://www.jb51.net/article/106375.htm</a></h2>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-09-30T07:13:34.479Z" itemprop="dateUpdated">2017-09-30 15:13:34</time>
+    Last updated: <time datetime="2017-09-30T07:10:51.222Z" itemprop="dateUpdated">2017-09-30 15:10:51</time>
 </span><br>
 
 
