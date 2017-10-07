@@ -13,24 +13,23 @@
     
     
     
-    <title>any-cgi-script--nginx--ubuntu16 | doc2git.com</title>
+    <title>我的vpn server on ubuntu16 搭建 | doc2git.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="torake,ubuntu,linux,cgi,nginx,automatice">
-    <meta name="description" content="title: any-cgi-script–nginx–ubuntu16date: 2017-09-30 15:04:47 tags: [torake, ubuntu, linux, cgi, nginx, automatice]配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu">
-<meta name="keywords" content="torake,ubuntu,linux,cgi,nginx,automatice">
+    <meta name="keywords" content="">
+    <meta name="description" content="参考链接*我的主要参考uri：　http://blog.csdn.net/hanshileiai/article/details/49205317 我的次要参考uri：　http://www.jianshu.com/p/a8d41e7dfbc6网上讲这个内容的文章比较多，但我就喜欢这两篇，这样已经够了。讲服务端的比较多，我就不原样搬砖了，说一下我以为需要注意的地方. 服务端 关于　/etc/ppt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="any-cgi-script--nginx--ubuntu16">
-<meta property="og:url" content="http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/index.html">
+<meta property="og:title" content="我的vpn server on ubuntu16 搭建">
+<meta property="og:url" content="http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/index.html">
 <meta property="og:site_name" content="doc2git.com">
-<meta property="og:description" content="title: any-cgi-script–nginx–ubuntu16date: 2017-09-30 15:04:47 tags: [torake, ubuntu, linux, cgi, nginx, automatice]配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu">
-<meta property="og:updated_time" content="2017-09-30T07:10:51.222Z">
+<meta property="og:description" content="参考链接*我的主要参考uri：　http://blog.csdn.net/hanshileiai/article/details/49205317 我的次要参考uri：　http://www.jianshu.com/p/a8d41e7dfbc6网上讲这个内容的文章比较多，但我就喜欢这两篇，这样已经够了。讲服务端的比较多，我就不原样搬砖了，说一下我以为需要注意的地方. 服务端 关于　/etc/ppt">
+<meta property="og:updated_time" content="2017-10-07T18:16:45.940Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="any-cgi-script--nginx--ubuntu16">
-<meta name="twitter:description" content="title: any-cgi-script–nginx–ubuntu16date: 2017-09-30 15:04:47 tags: [torake, ubuntu, linux, cgi, nginx, automatice]配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持http://xfeng.me/nginx-support-fcgi/https://askubuntu">
+<meta name="twitter:title" content="我的vpn server on ubuntu16 搭建">
+<meta name="twitter:description" content="参考链接*我的主要参考uri：　http://blog.csdn.net/hanshileiai/article/details/49205317 我的次要参考uri：　http://www.jianshu.com/p/a8d41e7dfbc6网上讲这个内容的文章比较多，但我就喜欢这两篇，这样已经够了。讲服务端的比较多，我就不原样搬砖了，说一下我以为需要注意的地方. 服务端 关于　/etc/ppt">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/style.css?v=1.6.14">
@@ -116,7 +115,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">any-cgi-script--nginx--ubuntu16</div>
+        <div class="flex-col header-title ellipsis">我的vpn server on ubuntu16 搭建</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -138,11 +137,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">any-cgi-script--nginx--ubuntu16</h1>
+        <h1 class="title">我的vpn server on ubuntu16 搭建</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-09-30T07:04:47.000Z" itemprop="datePublished" class="page-time">
-  2017-09-30
+                <time datetime="2017-10-07T16:57:26.000Z" itemprop="datePublished" class="page-time">
+  2017-10-08
 </time>
 
 
@@ -161,17 +160,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#tags-torake-ubuntu-linux-cgi-nginx-automatice"><span class="post-toc-number">1.</span> <span class="post-toc-text">tags: [torake, ubuntu, linux, cgi, nginx, automatice]</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持"><span class="post-toc-number"></span> <span class="post-toc-text">配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#http-xfeng-me-nginx-support-fcgi"><span class="post-toc-number">1.</span> <span class="post-toc-text">http://xfeng.me/nginx-support-fcgi/</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#https-answers-launchpad-net-esys-particle-question-365307"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">https://answers.launchpad.net/esys-particle/+question/365307</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#http-www-jb51-net-article-106375-htm"><span class="post-toc-number">2.</span> <span class="post-toc-text">http://www.jb51.net/article/106375.htm</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#参考链接"><span class="post-toc-number">1.</span> <span class="post-toc-text">参考链接*</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#我的次要参考uri：-http-www-jianshu-com-p-a8d41e7dfbc6"><span class="post-toc-number">2.</span> <span class="post-toc-text">我的次要参考uri：　http://www.jianshu.com/p/a8d41e7dfbc6</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#服务端"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">服务端</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#行百里路半九十"><span class="post-toc-number">2.1.0.0.1.</span> <span class="post-toc-text">行百里路半九十</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#客户端"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">客户端</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
-<article id="post-enable-any-cgi-script-nginx-ubuntu16"
+<article id="post-我的vpn server on ubuntu16 搭建"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">any-cgi-script--nginx--ubuntu16</h1>
+        <h1 class="post-card-title">我的vpn server on ubuntu16 搭建</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-09-30 15:04:47" datetime="2017-09-30T07:04:47.000Z"  itemprop="datePublished">2017-09-30</time>
+            <time class="post-time" title="2017-10-08 00:57:26" datetime="2017-10-07T16:57:26.000Z"  itemprop="datePublished">2017-10-08</time>
 
             
 
@@ -184,15 +183,58 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>title: any-cgi-script–nginx–ubuntu16<br>date: 2017-09-30 15:04:47</p>
-<h2 id="tags-torake-ubuntu-linux-cgi-nginx-automatice"><a href="#tags-torake-ubuntu-linux-cgi-nginx-automatice" class="headerlink" title="tags: [torake, ubuntu, linux, cgi, nginx, automatice]"></a>tags: [torake, ubuntu, linux, cgi, nginx, automatice]</h2><h1 id="配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持"><a href="#配置过程：-基于nginx和ubuntu的任意类型脚本的CGI支持" class="headerlink" title="配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持"></a>配置过程： 基于nginx和ubuntu的任意类型脚本的CGI支持</h1><h2 id="http-xfeng-me-nginx-support-fcgi"><a href="#http-xfeng-me-nginx-support-fcgi" class="headerlink" title="http://xfeng.me/nginx-support-fcgi/"></a><a href="http://xfeng.me/nginx-support-fcgi/" target="_blank" rel="external">http://xfeng.me/nginx-support-fcgi/</a></h2><h4 id="https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library"><a href="#https-askubuntu-com-questions-264053-how-to-install-c-fastcgi-development-library" class="headerlink" title="https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library"></a><a href="https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library" target="_blank" rel="external">https://askubuntu.com/questions/264053/how-to-install-c-fastcgi-development-library</a></h4><h4 id="https-answers-launchpad-net-esys-particle-question-365307"><a href="#https-answers-launchpad-net-esys-particle-question-365307" class="headerlink" title="https://answers.launchpad.net/esys-particle/+question/365307"></a><a href="https://answers.launchpad.net/esys-particle/+question/365307" target="_blank" rel="external">https://answers.launchpad.net/esys-particle/+question/365307</a></h4><h2 id="http-www-jb51-net-article-106375-htm"><a href="#http-www-jb51-net-article-106375-htm" class="headerlink" title="http://www.jb51.net/article/106375.htm"></a><a href="http://www.jb51.net/article/106375.htm" target="_blank" rel="external">http://www.jb51.net/article/106375.htm</a></h2>
+            <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接*"></a><strong>参考链接*</strong></h2><p>我的主要参考uri：　<em><a href="http://blog.csdn.net/hanshileiai/article/details/49205317" target="_blank" rel="external">http://blog.csdn.net/hanshileiai/article/details/49205317</a></em></p>
+<h2 id="我的次要参考uri：-http-www-jianshu-com-p-a8d41e7dfbc6"><a href="#我的次要参考uri：-http-www-jianshu-com-p-a8d41e7dfbc6" class="headerlink" title="我的次要参考uri：　http://www.jianshu.com/p/a8d41e7dfbc6"></a>我的次要参考uri：　<em><a href="http://www.jianshu.com/p/a8d41e7dfbc6" target="_blank" rel="external">http://www.jianshu.com/p/a8d41e7dfbc6</a></em></h2><p><em>网上讲这个内容的文章比较多，但我就喜欢这两篇，这样已经够了。</em><br><em>讲服务端的比较多，我就不原样搬砖了，说一下我以为需要注意的地方.</em></p>
+<h3 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a><strong>服务端</strong></h3><ul>
+<li>关于　/etc/pptpd.conf中localip　<br>　  - 网上有很多教程是说指定为跟客户端统一网段，我这样配置没有成功。<ul>
+<li>在我的例子中是　应该指定为服务器的外网网卡的局域网ip。</li>
+</ul>
+</li>
+<li><p>关于开启1723端口</p>
+<ul>
+<li>以上主要参考uri链接文中没有详述</li>
+<li>其实应该是: 开启gre协议，并打开服务器47,1723号端口。使用VPN需要开启gre协议，而gre协议需要使用服务器的47和1723号端口,具体步骤如下   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo iptables -A INPUT -p gre -j ACCEPT </div><div class="line">sudo iptables -A INPUT -p tcp --dport 1723 -j ACCEPT   </div><div class="line">sudo iptables -A INPUT -p tcp --dport 47 -j ACCEPT</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>详见我的次要参考链接　<a href="http://www.jianshu.com/p/a8d41e7dfbc6" target="_blank" rel="external">http://www.jianshu.com/p/a8d41e7dfbc6</a></p>
+</li>
+<li><p>通过参考以上两个链接的参考，结合实际交互，基本能把服务端配置妥当。</p>
+</li>
+</ul>
+<h6 id="行百里路半九十"><a href="#行百里路半九十" class="headerlink" title="行百里路半九十"></a><em>行百里路半九十</em></h6><p><em>在我的例子中,我的两台客户端pc都是ubuntu16.04，网络接入方式是wifi</em> </p>
+<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a><strong>客户端</strong></h3><p>从图形界面中调出　<em>网络连接</em>　配置项框；<br>  　+ 配置client　<em>vpn连接</em>　实例:</p>
+<pre><code>  - 点击右上角 *新增*
+  - 选择 *以太网*
+  - 选择　*点到点隧道协议（pptp）*
+  - 点击 *新建*
+  - 出现vpn选项表单，依次输入　*网关* ，*vpn　server*　中设置的客户 *用户名* 和 *密码* (根据情况选择密码记住或每次询问)
+  - 选择 *高级按钮*
+  - 勾选　*使用点到点加密*
+  - 勾选　*允许有状态的加密*
+  - 勾选　*发送ppp回响包*
+  - 点击　*确定*
+  - 点击　*保存*
++ 配置client　*WI-FI*:
+  - 选中自己要接入的wifi配置实例
+  - 点击　*编辑* 按钮
+  - 出现选项卡，当前选中的是　*WI-FI* 栏目
+  - 选中常规栏目，选择　*使用此连接时自动连接vpn* 选项
+  - 选择配置好的　*vpn* 项实例
+  - 根据实际情况决定选择　*所有用户都可以使用这个连接*
+  - 点解 *保存*　按钮
++ 收官
+　- 断开WI-FI连接
+  - 重新连接该配置好的WI-FI实例
+</code></pre><hr>
+<p><strong>按照这么一路走来，<em>vpn server</em> 应该时配置好了，如果有点啥出入，问google吧。当然也可以邮箱联系我 doc2git@yahoo.com </strong></p>
+
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-09-30T07:10:51.222Z" itemprop="dateUpdated">2017-09-30 15:10:51</time>
+    Last updated: <time datetime="2017-10-07T18:16:45.940Z" itemprop="dateUpdated">2017-10-08 02:16:45</time>
 </span><br>
 
 
@@ -217,8 +259,6 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/automatice/">automatice</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cgi/">cgi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/">nginx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/torake/">torake</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/">ubuntu</a></li></ul>
-
 
             
 <div class="page-share-wrap">
@@ -227,7 +267,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/&title=《any-cgi-script--nginx--ubuntu16》 — doc2git.com&pic=http://doc2git/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/&title=《我的vpn server on ubuntu16 搭建》 — doc2git.com&pic=http://doc2git/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -237,22 +277,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/&title=《any-cgi-script--nginx--ubuntu16》 — doc2git.com&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/&title=《我的vpn server on ubuntu16 搭建》 — doc2git.com&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《any-cgi-script--nginx--ubuntu16》 — doc2git.com&url=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/&via=http://doc2git" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《我的vpn server on ubuntu16 搭建》 — doc2git.com&url=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/&via=http://doc2git" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -275,18 +315,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2017/10/01/开源实时服务器deepstream.io/" id="post-prev" class="post-nav-link">
+      <a href="/2017/11/02/来来来，欢快的写UI，立刻view渲染！/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">开源实时服务器deepstream.io</h4>
+        <h4 class="title">来来来，欢快的写UI，立刻view渲染！</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/09/28/给小黄的链接/" id="post-next" class="post-nav-link">
+      <a href="/2017/10/03/linux词典下载地址/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">给小黄的链接</h4>
+        <h4 class="title">linux词典下载地址</h4>
       </a>
     </div>
   
@@ -379,7 +419,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/&title=《any-cgi-script--nginx--ubuntu16》 — doc2git.com&pic=http://doc2git/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/&title=《我的vpn server on ubuntu16 搭建》 — doc2git.com&pic=http://doc2git/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -389,22 +429,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/&title=《any-cgi-script--nginx--ubuntu16》 — doc2git.com&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/&title=《我的vpn server on ubuntu16 搭建》 — doc2git.com&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《any-cgi-script--nginx--ubuntu16》 — doc2git.com&url=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/&via=http://doc2git" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《我的vpn server on ubuntu16 搭建》 — doc2git.com&url=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/&via=http://doc2git" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -415,7 +455,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://doc2git/2017/09/30/enable-any-cgi-script-nginx-ubuntu16/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/" alt="微信分享二维码">
 </div>
 
 
