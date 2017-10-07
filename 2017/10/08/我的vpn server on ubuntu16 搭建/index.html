@@ -26,7 +26,7 @@
 <meta property="og:url" content="http://doc2git/2017/10/08/我的vpn server on ubuntu16 搭建/index.html">
 <meta property="og:site_name" content="doc2git.com">
 <meta property="og:description" content="参考链接*我的主要参考uri：　http://blog.csdn.net/hanshileiai/article/details/49205317 我的次要参考uri：　http://www.jianshu.com/p/a8d41e7dfbc6网上讲这个内容的文章比较多，但我就喜欢这两篇，这样已经够了。讲服务端的比较多，我就不原样搬砖了，说一下我以为需要注意的地方. 服务端 关于　/etc/ppt">
-<meta property="og:updated_time" content="2017-10-07T18:16:45.940Z">
+<meta property="og:updated_time" content="2017-10-07T18:21:23.035Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的vpn server on ubuntu16 搭建">
 <meta name="twitter:description" content="参考链接*我的主要参考uri：　http://blog.csdn.net/hanshileiai/article/details/49205317 我的次要参考uri：　http://www.jianshu.com/p/a8d41e7dfbc6网上讲这个内容的文章比较多，但我就喜欢这两篇，这样已经够了。讲服务端的比较多，我就不原样搬砖了，说一下我以为需要注意的地方. 服务端 关于　/etc/ppt">
@@ -202,26 +202,27 @@
 </li>
 </ul>
 <h6 id="行百里路半九十"><a href="#行百里路半九十" class="headerlink" title="行百里路半九十"></a><em>行百里路半九十</em></h6><p><em>在我的例子中,我的两台客户端pc都是ubuntu16.04，网络接入方式是wifi</em> </p>
-<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a><strong>客户端</strong></h3><p>从图形界面中调出　<em>网络连接</em>　配置项框；<br>  　+ 配置client　<em>vpn连接</em>　实例:</p>
-<pre><code>  - 点击右上角 *新增*
-  - 选择 *以太网*
-  - 选择　*点到点隧道协议（pptp）*
-  - 点击 *新建*
-  - 出现vpn选项表单，依次输入　*网关* ，*vpn　server*　中设置的客户 *用户名* 和 *密码* (根据情况选择密码记住或每次询问)
-  - 选择 *高级按钮*
-  - 勾选　*使用点到点加密*
-  - 勾选　*允许有状态的加密*
-  - 勾选　*发送ppp回响包*
-  - 点击　*确定*
-  - 点击　*保存*
-+ 配置client　*WI-FI*:
+<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a><strong>客户端</strong></h3><p>从图形界面中调出　<em> 网络连接 </em>　配置项框； </p>
+<p>  　+ 配置client　<em> vpn连接 </em>　实例:</p>
+<pre><code>  - 点击右上角 * 新增 *
+  - 选择 * 以太网 *
+  - 选择　* 点到点隧道协议（pptp）*
+  - 点击 * 新建 *
+  - 出现vpn选项表单，依次输入　* 网关 * ，* vpn　server *　中设置的客户 *用户名* 和 *密码* (根据情况选择密码记住或每次询问)
+  - 选择 * 高级按钮 *
+  - 勾选　* 使用点到点加密 *
+  - 勾选　* 允许有状态的加密 *
+  - 勾选　* 发送ppp回响包 *
+  - 点击　* 确定 *
+  - 点击　* 保存 *
++ 配置client　* WI-FI *:
   - 选中自己要接入的wifi配置实例
-  - 点击　*编辑* 按钮
-  - 出现选项卡，当前选中的是　*WI-FI* 栏目
-  - 选中常规栏目，选择　*使用此连接时自动连接vpn* 选项
-  - 选择配置好的　*vpn* 项实例
-  - 根据实际情况决定选择　*所有用户都可以使用这个连接*
-  - 点解 *保存*　按钮
+  - 点击　* 编辑 * 按钮
+  - 出现选项卡，当前选中的是　* WI-FI * 栏目
+  - 选中常规栏目，选择　* 使用此连接时自动连接vpn * 选项
+  - 选择配置好的　* vpn * 项实例
+  - 根据实际情况决定选择　* 所有用户都可以使用这个连接 *
+  - 点解 * 保存 *　按钮
 + 收官
 　- 断开WI-FI连接
   - 重新连接该配置好的WI-FI实例
@@ -234,7 +235,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-10-07T18:16:45.940Z" itemprop="dateUpdated">2017-10-08 02:16:45</time>
+    Last updated: <time datetime="2017-10-07T18:21:23.035Z" itemprop="dateUpdated">2017-10-08 02:21:23</time>
 </span><br>
 
 
