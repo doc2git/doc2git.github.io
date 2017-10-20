@@ -115,11 +115,13 @@
 
     //app Vue instance
     var app = new Vue({ // app initial state
-        data: {
-            todos: todoStorage.fetch(),
-            newTodo: '',
-            editedTodo: null,
-            visibility: 'all'
+        data() {
+            return {
+                todos: {},
+                newTodo: '',
+                editedTodo: null,
+                visibility: 'all'
+            }
         },
 
         // watch todos change for localStorage persistence

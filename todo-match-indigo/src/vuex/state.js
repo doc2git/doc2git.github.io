@@ -1,4 +1,5 @@
 //定义列表
 export const state = {
-    list: []
+    uid: 0,
+    todos: []
 };

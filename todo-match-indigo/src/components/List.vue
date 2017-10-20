@@ -24,6 +24,7 @@
 
 </template>
 <script>
+    import Vuex from '../vuex/index.js';
     export default {
         el: '#list',
         // app initial state
