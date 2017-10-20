@@ -1,4 +1,3 @@
-import {ADD_COLLECT, REMOVE_COLLECT} from './mutation-types.js';
 export const actions = {
     add_note(context){
         context.commit();
