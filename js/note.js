@@ -9556,7 +9556,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 new _vue2.default({
   store: _store2.default, // inject store to all children
-  el: '#sticky',
+  el: '#app',
   render: function render(h) {
     return h(_App2.default);
   }
