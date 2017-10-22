@@ -131,7 +131,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -142,15 +142,18 @@
         <a id="noteWrap" href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="note">
             <i id="noteBtn" style="font-weight:900;" class="icon icon-lg icon-sticky-note-o"></i>
         </a>
-	<div id="stickyNoteWrap" class="global-share" style="background-color:red; width:500px; height:400px;">
+	<div id="stickyNoteWrap" class="global-share" style="background-color:transparent; padding:4px 6px; display:flex; justify-content:center box-shadow:0 0 2px 0 rgba(0,0,0,0.16), 0 0px 0px 0 rgba(0,0,0,0.12)">
 	    <iframe 
-		width="400"
-		    height="300"
-		        frameborder="0"
-			    scrolling="no"
-			        marginheight="0"
-				    marginwidth="0"
-	        src='/note'>
+	    	background="transparent"
+		width="252"
+		height="260"
+		box-sizing="border-box"
+		frameborder="0"
+		scrolling="no"
+		marginheight="0"
+		marginwidth="0"
+	        src='http://localhost:8080/note'>
+		style="padding:8px 6px"
 	    </iframe>
 	</div>
 	<!-- Above lines Added by doc2git -->
@@ -175,7 +178,7 @@
 <div class="tabs-bar container">
     <nav class="tags-list">
         <a href="/categories" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
-            ">全部</a>
+            ">All</a>
         
 
             <a href="/categories/plan/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light active">plan</a>
@@ -186,11 +189,11 @@
 
         
 
-            <a href="/categories/工具/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">工具</a>
+            <a href="/categories/plan/todo/2017/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light active">2017</a>
 
         
 
-            <a href="/categories/plan/todo/2017/" style="-webkit-order:3;order:3" class="tags-list-item waves-effect waves-button waves-light active">2017</a>
+            <a href="/categories/工具/" style="-webkit-order:3;order:3" class="tags-list-item waves-effect waves-button waves-light">工具</a>
 
         
 
@@ -198,15 +201,15 @@
 
         
 
-            <a href="/categories/代理/" style="-webkit-order:5;order:5" class="tags-list-item waves-effect waves-button waves-light">代理</a>
+            <a href="/categories/plan/todo/2017/2017-1/" style="-webkit-order:5;order:5" class="tags-list-item waves-effect waves-button waves-light">2017.1</a>
 
         
 
-            <a href="/categories/工具/UI代码/" style="-webkit-order:6;order:6" class="tags-list-item waves-effect waves-button waves-light">UI代码</a>
+            <a href="/categories/代理/" style="-webkit-order:6;order:6" class="tags-list-item waves-effect waves-button waves-light">代理</a>
 
         
 
-            <a href="/categories/plan/todo/2017/2017-1/" style="-webkit-order:7;order:7" class="tags-list-item waves-effect waves-button waves-light">2017.1</a>
+            <a href="/categories/工具/UI代码/" style="-webkit-order:7;order:7" class="tags-list-item waves-effect waves-button waves-light">UI代码</a>
 
         
 
@@ -222,19 +225,19 @@
 
         
 
-            <a href="/categories/代理/转跳/" style="-webkit-order:11;order:11" class="tags-list-item waves-effect waves-button waves-light">转跳</a>
+            <a href="/categories/nginx/" style="-webkit-order:11;order:11" class="tags-list-item waves-effect waves-button waves-light">nginx</a>
 
         
 
-            <a href="/categories/nginx/" style="-webkit-order:12;order:12" class="tags-list-item waves-effect waves-button waves-light">nginx</a>
+            <a href="/categories/代理/转跳/" style="-webkit-order:12;order:12" class="tags-list-item waves-effect waves-button waves-light">转跳</a>
 
         
 
-            <a href="/categories/工具/UI代码/便捷测试/" style="-webkit-order:13;order:13" class="tags-list-item waves-effect waves-button waves-light">便捷测试</a>
+            <a href="/categories/test/" style="-webkit-order:13;order:13" class="tags-list-item waves-effect waves-button waves-light">test</a>
 
         
 
-            <a href="/categories/test/" style="-webkit-order:14;order:14" class="tags-list-item waves-effect waves-button waves-light">test</a>
+            <a href="/categories/工具/UI代码/便捷测试/" style="-webkit-order:14;order:14" class="tags-list-item waves-effect waves-button waves-light">便捷测试</a>
 
         
 
@@ -353,7 +356,7 @@
 
         <p>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">

@@ -131,7 +131,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -142,15 +142,18 @@
         <a id="noteWrap" href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="note">
             <i id="noteBtn" style="font-weight:900;" class="icon icon-lg icon-sticky-note-o"></i>
         </a>
-	<div id="stickyNoteWrap" class="global-share" style="background-color:red; width:500px; height:400px;">
+	<div id="stickyNoteWrap" class="global-share" style="background-color:transparent; padding:4px 6px; display:flex; justify-content:center box-shadow:0 0 2px 0 rgba(0,0,0,0.16), 0 0px 0px 0 rgba(0,0,0,0.12)">
 	    <iframe 
-		width="400"
-		    height="300"
-		        frameborder="0"
-			    scrolling="no"
-			        marginheight="0"
-				    marginwidth="0"
-	        src='/note'>
+	    	background="transparent"
+		width="252"
+		height="260"
+		box-sizing="border-box"
+		frameborder="0"
+		scrolling="no"
+		marginheight="0"
+		marginwidth="0"
+	        src='http://localhost:8080/note'>
+		style="padding:8px 6px"
 	    </iframe>
 	</div>
 	<!-- Above lines Added by doc2git -->
@@ -175,34 +178,38 @@
 <div class="tabs-bar container">
     <nav class="tags-list">
         <a href="/tags" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
-            ">全部</a>
+            ">All</a>
         
 
-            <a href="/tags/plan/" style="-webkit-order:39;order:39" class="tags-list-item waves-effect waves-button waves-light">plan</a>
-
-        
-
-            <a href="/tags/todo/" style="-webkit-order:40;order:40" class="tags-list-item waves-effect waves-button waves-light">todo</a>
+            <a href="/tags/plan/" style="-webkit-order:38;order:38" class="tags-list-item waves-effect waves-button waves-light">plan</a>
 
         
 
-            <a href="/tags/2017/" style="-webkit-order:41;order:41" class="tags-list-item waves-effect waves-button waves-light">2017</a>
+            <a href="/tags/todo/" style="-webkit-order:39;order:39" class="tags-list-item waves-effect waves-button waves-light">todo</a>
 
         
 
-            <a href="/tags/2017-10-week3/" style="-webkit-order:42;order:42" class="tags-list-item waves-effect waves-button waves-light">2017.10 week3</a>
+            <a href="/tags/2017/" style="-webkit-order:40;order:40" class="tags-list-item waves-effect waves-button waves-light">2017</a>
 
         
 
-            <a href="/tags/week2/" style="-webkit-order:43;order:43" class="tags-list-item waves-effect waves-button waves-light">week2</a>
+            <a href="/tags/2017-10-week3/" style="-webkit-order:41;order:41" class="tags-list-item waves-effect waves-button waves-light">2017.10 week3</a>
 
         
 
-            <a href="/tags/tutor/" style="-webkit-order:44;order:44" class="tags-list-item waves-effect waves-button waves-light">tutor</a>
+            <a href="/tags/week2/" style="-webkit-order:42;order:42" class="tags-list-item waves-effect waves-button waves-light">week2</a>
 
         
 
-            <a href="/tags/hexo/" style="-webkit-order:45;order:45" class="tags-list-item waves-effect waves-button waves-light">hexo</a>
+            <a href="/tags/tutor/" style="-webkit-order:43;order:43" class="tags-list-item waves-effect waves-button waves-light">tutor</a>
+
+        
+
+            <a href="/tags/hexo/" style="-webkit-order:44;order:44" class="tags-list-item waves-effect waves-button waves-light">hexo</a>
+
+        
+
+            <a href="/tags/turtor/" style="-webkit-order:45;order:45" class="tags-list-item waves-effect waves-button waves-light">turtor</a>
 
         
 
@@ -402,103 +409,99 @@
 
         
 
-            <a href="/tags/turtor/" style="-webkit-order:14;order:14" class="tags-list-item waves-effect waves-button waves-light">turtor</a>
+            <a href="/tags/词典/" style="-webkit-order:14;order:14" class="tags-list-item waves-effect waves-button waves-light">词典</a>
 
         
 
-            <a href="/tags/词典/" style="-webkit-order:15;order:15" class="tags-list-item waves-effect waves-button waves-light">词典</a>
+            <a href="/tags/翻译/" style="-webkit-order:15;order:15" class="tags-list-item waves-effect waves-button waves-light">翻译</a>
 
         
 
-            <a href="/tags/翻译/" style="-webkit-order:16;order:16" class="tags-list-item waves-effect waves-button waves-light">翻译</a>
+            <a href="/tags/静态资源/" style="-webkit-order:16;order:16" class="tags-list-item waves-effect waves-button waves-light">静态资源</a>
 
         
 
-            <a href="/tags/静态资源/" style="-webkit-order:17;order:17" class="tags-list-item waves-effect waves-button waves-light">静态资源</a>
+            <a href="/tags/正向代理/" style="-webkit-order:17;order:17" class="tags-list-item waves-effect waves-button waves-light">正向代理</a>
 
         
 
-            <a href="/tags/正向代理/" style="-webkit-order:18;order:18" class="tags-list-item waves-effect waves-button waves-light">正向代理</a>
+            <a href="/tags/反向代理/" style="-webkit-order:18;order:18" class="tags-list-item waves-effect waves-button waves-light">反向代理</a>
 
         
 
-            <a href="/tags/反向代理/" style="-webkit-order:19;order:19" class="tags-list-item waves-effect waves-button waves-light">反向代理</a>
+            <a href="/tags/负载均衡/" style="-webkit-order:19;order:19" class="tags-list-item waves-effect waves-button waves-light">负载均衡</a>
 
         
 
-            <a href="/tags/负载均衡/" style="-webkit-order:20;order:20" class="tags-list-item waves-effect waves-button waves-light">负载均衡</a>
+            <a href="/tags/bootstrap/" style="-webkit-order:20;order:20" class="tags-list-item waves-effect waves-button waves-light">bootstrap</a>
 
         
 
-            <a href="/tags/bootstrap/" style="-webkit-order:21;order:21" class="tags-list-item waves-effect waves-button waves-light">bootstrap</a>
+            <a href="/tags/ui-src/" style="-webkit-order:21;order:21" class="tags-list-item waves-effect waves-button waves-light">ui-src</a>
 
         
 
-            <a href="/tags/ui-src/" style="-webkit-order:22;order:22" class="tags-list-item waves-effect waves-button waves-light">ui-src</a>
+            <a href="/tags/template/" style="-webkit-order:22;order:22" class="tags-list-item waves-effect waves-button waves-light">template</a>
 
         
 
-            <a href="/tags/template/" style="-webkit-order:23;order:23" class="tags-list-item waves-effect waves-button waves-light">template</a>
+            <a href="/tags/demoes/" style="-webkit-order:23;order:23" class="tags-list-item waves-effect waves-button waves-light">demoes</a>
 
         
 
-            <a href="/tags/demoes/" style="-webkit-order:24;order:24" class="tags-list-item waves-effect waves-button waves-light">demoes</a>
+            <a href="/tags/link/" style="-webkit-order:24;order:24" class="tags-list-item waves-effect waves-button waves-light">link</a>
 
         
 
-            <a href="/tags/link/" style="-webkit-order:25;order:25" class="tags-list-item waves-effect waves-button waves-light">link</a>
+            <a href="/tags/salt/" style="-webkit-order:25;order:25" class="tags-list-item waves-effect waves-button waves-light">salt</a>
 
         
 
-            <a href="/tags/salt/" style="-webkit-order:26;order:26" class="tags-list-item waves-effect waves-button waves-light">salt</a>
+            <a href="/tags/test/" style="-webkit-order:26;order:26" class="tags-list-item waves-effect waves-button waves-light">test</a>
 
         
 
-            <a href="/tags/test/" style="-webkit-order:27;order:27" class="tags-list-item waves-effect waves-button waves-light">test</a>
+            <a href="/tags/try/" style="-webkit-order:27;order:27" class="tags-list-item waves-effect waves-button waves-light">try</a>
 
         
 
-            <a href="/tags/try/" style="-webkit-order:28;order:28" class="tags-list-item waves-effect waves-button waves-light">try</a>
+            <a href="/tags/why/" style="-webkit-order:28;order:28" class="tags-list-item waves-effect waves-button waves-light">why</a>
 
         
 
-            <a href="/tags/why/" style="-webkit-order:29;order:29" class="tags-list-item waves-effect waves-button waves-light">why</a>
+            <a href="/tags/js/" style="-webkit-order:29;order:29" class="tags-list-item waves-effect waves-button waves-light">js</a>
 
         
 
-            <a href="/tags/js/" style="-webkit-order:30;order:30" class="tags-list-item waves-effect waves-button waves-light">js</a>
+            <a href="/tags/brave/" style="-webkit-order:30;order:30" class="tags-list-item waves-effect waves-button waves-light">brave</a>
 
         
 
-            <a href="/tags/brave/" style="-webkit-order:31;order:31" class="tags-list-item waves-effect waves-button waves-light">brave</a>
+            <a href="/tags/vim/" style="-webkit-order:31;order:31" class="tags-list-item waves-effect waves-button waves-light">vim</a>
 
         
 
-            <a href="/tags/vim/" style="-webkit-order:32;order:32" class="tags-list-item waves-effect waves-button waves-light">vim</a>
+            <a href="/tags/rails/" style="-webkit-order:32;order:32" class="tags-list-item waves-effect waves-button waves-light">rails</a>
 
         
 
-            <a href="/tags/rails/" style="-webkit-order:33;order:33" class="tags-list-item waves-effect waves-button waves-light">rails</a>
+            <a href="/tags/ruby/" style="-webkit-order:33;order:33" class="tags-list-item waves-effect waves-button waves-light">ruby</a>
 
         
 
-            <a href="/tags/ruby/" style="-webkit-order:34;order:34" class="tags-list-item waves-effect waves-button waves-light">ruby</a>
+            <a href="/tags/development/" style="-webkit-order:34;order:34" class="tags-list-item waves-effect waves-button waves-light">development</a>
 
         
 
-            <a href="/tags/development/" style="-webkit-order:35;order:35" class="tags-list-item waves-effect waves-button waves-light">development</a>
+            <a href="/tags/开源/" style="-webkit-order:35;order:35" class="tags-list-item waves-effect waves-button waves-light">开源</a>
 
         
 
-            <a href="/tags/开源/" style="-webkit-order:36;order:36" class="tags-list-item waves-effect waves-button waves-light">开源</a>
+            <a href="/tags/实时服务器/" style="-webkit-order:36;order:36" class="tags-list-item waves-effect waves-button waves-light">实时服务器</a>
 
         
 
-            <a href="/tags/实时服务器/" style="-webkit-order:37;order:37" class="tags-list-item waves-effect waves-button waves-light">实时服务器</a>
-
-        
-
-            <a href="/tags/deepstream-io/" style="-webkit-order:38;order:38" class="tags-list-item waves-effect waves-button waves-light">deepstream.io</a>
+            <a href="/tags/deepstream-io/" style="-webkit-order:37;order:37" class="tags-list-item waves-effect waves-button waves-light">deepstream.io</a>
 
         
     </nav>
@@ -569,7 +572,7 @@
 
         <p>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
