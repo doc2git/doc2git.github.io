@@ -20,16 +20,16 @@
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="vue实例中的缓存      data 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；    computed 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；    filter 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；    属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新的是啥？是忧伤；">
+    <meta name="description" content="vue实例中的缓存：  123456789*data* 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；*computed* 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；*filter* 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；*watch* 属性对象中定义的属性值不会被缓存,        会随在属性名&amp;apos;a&amp;apos;所对应的实例属">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue和vuex中各概念细微差别备忘板">
 <meta property="og:url" content="http://doc2git.com/2017/10/27/vue和vuex中各概念细微差别备忘板/index.html">
 <meta property="og:site_name" content="icccc.cc   -   doc2git.com">
-<meta property="og:description" content="vue实例中的缓存      data 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；    computed 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；    filter 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；    属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新的是啥？是忧伤；">
-<meta property="og:updated_time" content="2017-10-27T03:09:06.002Z">
+<meta property="og:description" content="vue实例中的缓存：  123456789*data* 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；*computed* 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；*filter* 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；*watch* 属性对象中定义的属性值不会被缓存,        会随在属性名&amp;apos;a&amp;apos;所对应的实例属">
+<meta property="og:updated_time" content="2017-10-27T03:52:37.526Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue和vuex中各概念细微差别备忘板">
-<meta name="twitter:description" content="vue实例中的缓存      data 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；    computed 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；    filter 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；    属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新的是啥？是忧伤；">
+<meta name="twitter:description" content="vue实例中的缓存：  123456789*data* 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；*computed* 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；*filter* 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；*watch* 属性对象中定义的属性值不会被缓存,        会随在属性名&amp;apos;a&amp;apos;所对应的实例属">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/style.css?v=1.6.14">
@@ -135,7 +135,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -195,7 +195,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vue实例中的缓存"><span class="post-toc-number">1.</span> <span class="post-toc-text">vue实例中的缓存</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vue实例中的缓存："><span class="post-toc-number">1.</span> <span class="post-toc-text">vue实例中的缓存：</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vuex实例中的概念："><span class="post-toc-number">2.</span> <span class="post-toc-text">vuex实例中的概念：</span></a></li></ol>
         </nav>
     </aside>
     
@@ -219,22 +219,62 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <ul>
-<li><h1 id="vue实例中的缓存"><a href="#vue实例中的缓存" class="headerlink" title="vue实例中的缓存"></a>vue实例中的缓存</h1></li>
+<li><h1 id="vue实例中的缓存："><a href="#vue实例中的缓存：" class="headerlink" title="vue实例中的缓存："></a>vue实例中的缓存：</h1></li>
 </ul>
-<blockquote>
-<p>   <em>data</em> 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；</p>
-<p>   <em>computed</em> 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；</p>
-<p>   <em>filter</em> 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；</p>
-<p>   属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新的是啥？是忧伤；</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">*data* 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；</div><div class="line"></div><div class="line">*computed* 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；</div><div class="line"></div><div class="line">*filter* 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；</div><div class="line"></div><div class="line">*watch* 属性对象中定义的属性值不会被缓存,</div><div class="line">        会随在属性名&apos;a&apos;所对应的实例属性this[&apos;a&apos;]之变化时，</div><div class="line">        执行watch中定义的&apos;a&apos;属性标示的函数；</div></pre></td></tr></table></figure>
+<ul>
+<li><h1 id="vuex实例中的概念："><a href="#vuex实例中的概念：" class="headerlink" title="vuex实例中的概念："></a>vuex实例中的概念：</h1></li>
+</ul>
+<p><em>state</em> 单一状态树</p>
+<pre><code>+   Vuex 通过 store 选项，
+    -   提供了一种机制将状态从根组件“注入”到每一个子组件中（需调用 Vue.use(Vuex)）;
 
++   通过在根实例中注册 store 选项，
+    -   该 store实例会注入到根组件下的所有子组件中，
+    -   且子组件能通过 this.$store 访问到。;
+    -   当一个组件需要获取多个状态时候，
+    -   将这些状态都声明为计算属性会有些重复和冗余。
+    -   为了解决这个问题，
+
++   可以使用 mapState 辅助函数帮助我们生成计算属性;
+    -   当映射的计算属性的名称与 state 的子节点名称相同时，
+    -   我们也可以给 mapState 传一个字符串数组。
+</code></pre><p><em>getter</em> </p>
+<pre><code>+   有时候我们需要从 store 中的 state 中派生出一些状态;
+
++   如果有多个组件需要用到此属性，
+    -   我们要么复制这个函数，
+    -   或者抽取到一个共享函数然后在多处导入它,
+    -   无论哪种方式都不是很理想;
+
++   Vuex 允许我们在 store 中定义“getter”（可以认为是 store 的计算属性）,
+    -   就像计算属性一样;
+    -   getter的返回值会根据它的依赖被缓存起来，
+    -   而且且只有当它的依赖值发生了改变才会被重新计算;
+
++   Getter 接受 state 作为其第一个参数;
+
++   Getter 会暴露为 store.getters 对象;
+
++   Getter 也可以接受其他 getter 作为第二个参数;
+
++   我们可以很容易地在任何组件中使用它;
+
++   也可以通过让 getter 返回一个函数，
+    -   来实现给 getter 传参。
+    -   在你对 store里的数组进行查询时非常有用;
+
++   mapGetters 辅助函数仅仅是将 store 中的 getter 映射到局部计算属性;    
+    -   如果想将一个 getter 属性另取一个名字，
+    -   使用对象形式;
+</code></pre>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最後更新時間：<time datetime="2017-10-27T03:09:06.002Z" itemprop="dateUpdated">2017-10-27 11:09:06</time>
+    Last updated: <time datetime="2017-10-27T03:52:37.526Z" itemprop="dateUpdated">2017-10-27 11:52:37</time>
 </span><br>
 
 
@@ -388,7 +428,7 @@
 
         <p>
             
-            <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
