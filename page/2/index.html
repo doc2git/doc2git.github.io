@@ -132,7 +132,7 @@
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
             <input type="text" id="key" class="search-input" autocomplete="off"
-                   placeholder="Search">
+                   placeholder="搜尋">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -190,6 +190,101 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-vue和vuex中各概念细微差别备忘板"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-10-27 02:56:56" datetime="2017-10-26T18:56:56.376Z"  itemprop="datePublished">2017-10-27</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/10/27/vue和vuex中各概念细微差别备忘板/">vue和vuex中各概念细微差别备忘板</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+vue实例：
+
+缓存，更新  
+-   data 属性对象中定义的属性值会被缓存,不会随依赖变量变化而计算更新；
+
+-   computed 属性对象中定义的属性值会被缓存,会随依赖变量变化而计算更新；
+
+-   filter 属性对象中定义的属性值不会被缓存,会随依赖变量变化而计算更新；
+
++   watch 属性对象中定义的属性值不会被缓存,
+    -   会随在属性名&apos;a...
+    
+
+        <a href="/2017/10/27/vue和vuex中各概念细微差别备忘板/" class="post-more waves-effect waves-button">
+            閱讀全文…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Plan-todo-long-time"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-10-23 17:27:09" datetime="2017-10-23T09:27:09.000Z"  itemprop="datePublished">2017-10-23</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/10/23/Plan-todo-long-time/">Plan-todo-long-time</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+用vue写一个域名出售ui.
+
+狠狠踢自己一脚，每周抽空写一个静态页面；
+
+
+
+    
+
+        <a href="/2017/10/23/Plan-todo-long-time/" class="post-more waves-effect waves-button">
+            閱讀全文…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-Vue单元测试"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -217,14 +312,15 @@
 
     
         
+vue实现原理，源码解析（中文）：　https://github.com/DMQ/mvvm
 Vue单元测试：https://cn.vuejs.org/v2/guide/unit-testing.html
 Actions can return promises (oir rather: always return a Promise),so it should be trivial.
 
-You might be interested in this chapter of the d...
+Yo...
     
 
         <a href="/2017/10/23/Vue单元测试/" class="post-more waves-effect waves-button">
-            Continue reading...
+            閱讀全文…
         </a>
     </div>
     
@@ -274,63 +370,7 @@ You might be interested in this chapter of the d...
     
 
         <a href="/2017/10/23/Todo-2017.10-week4/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2017/">2017</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plan/">plan</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/todo/">todo</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Todo-2017.10-week4"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-10-23 11:11:20" datetime="2017-10-23T03:11:20.000Z"  itemprop="datePublished">2017-10-23</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/plan/">plan</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/plan/todo/">todo</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/plan/todo/2017/">2017</a></li></ul></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/10/23/Todo-2017.10-week4/">Todo-2017.10-week4</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        
-完善我的博客中vue便签模块;
-  DONE    让新的便签条目默认显示在最前面；
-  DONE    添加功能:    
-**DONE**   加热(冷文本变热);
-**DONE**   降温(热文本变冷);
-**DONE**   移除(移除文本)； 
-  DONE    最后一个操作的简要提示功能:
-**DONE**    监听 *加热*　并显示提示信息；
-**DONE**    监...
-    
-
-        <a href="/2017/10/23/Todo-2017.10-week4/" class="post-more waves-effect waves-button">
-            Continue reading...
+            閱讀全文…
         </a>
     </div>
     
@@ -381,7 +421,7 @@ rollup (es6原生自带)
     
 
         <a href="/2017/10/20/JS打包工具/" class="post-more waves-effect waves-button">
-            Continue reading...
+            閱讀全文…
         </a>
     </div>
     
@@ -423,7 +463,52 @@ http://blog.csdn.net/a...
     
 
         <a href="/2017/10/20/gitbook入坑导读链接/" class="post-more waves-effect waves-button">
-            Continue reading...
+            閱讀全文…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Vue学习参考(无图版)链接"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-10-20 12:25:08" datetime="2017-10-20T04:25:08.000Z"  itemprop="datePublished">2017-10-20</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/10/20/Vue学习参考(无图版)链接/">Vue学习参考(无图版)链接</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+vue官网：http://cn.vuejs.org/v2/guidevue官方demo集: https://cn.vuejs.org/v2/examples/tree-view.html
+vuex官网：https://vuex.vuejs.org/zh-cn/
+                
+                    
+                    
+      ...
+    
+
+        <a href="/2017/10/20/Vue学习参考(无图版)链接/" class="post-more waves-effect waves-button">
+            閱讀全文…
         </a>
     </div>
     
@@ -474,52 +559,7 @@ vue官网：http://cn.vuejs.org/v2/guide
     
 
         <a href="/2017/10/20/Vue学习参考链接/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Vue学习参考(无图版)链接"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-10-20 12:25:08" datetime="2017-10-20T04:25:08.000Z"  itemprop="datePublished">2017-10-20</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/10/20/Vue学习参考(无图版)链接/">Vue学习参考(无图版)链接</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        
-vue官网：http://cn.vuejs.org/v2/guidevue官方demo集: https://cn.vuejs.org/v2/examples/tree-view.html
-vuex官网：https://vuex.vuejs.org/zh-cn/
-                
-                    
-                    
-      ...
-    
-
-        <a href="/2017/10/20/Vue学习参考(无图版)链接/" class="post-more waves-effect waves-button">
-            Continue reading...
+            閱讀全文…
         </a>
     </div>
     
@@ -564,7 +604,7 @@ vuex官网：https://vuex.vuejs.org/zh-cn/
     
 
         <a href="/2017/10/18/Todo-links/" class="post-more waves-effect waves-button">
-            Continue reading...
+            閱讀全文…
         </a>
     </div>
     
@@ -606,7 +646,7 @@ vuex官网：https://vuex.vuejs.org/zh-cn/
     
 
         <a href="/2017/10/17/salt-test/" class="post-more waves-effect waves-button">
-            Continue reading...
+            閱讀全文…
         </a>
     </div>
     
@@ -614,48 +654,6 @@ vuex官网：https://vuex.vuejs.org/zh-cn/
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/salt/">salt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/">test</a></li></ul>
 
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-关于js对象的深浅复制"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-10-17 13:49:44" datetime="2017-10-17T05:49:44.000Z"  itemprop="datePublished">2017-10-17</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/10/17/关于js对象的深浅复制/">关于js对象的深浅复制</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        
-https://developer.mozilla.org/zh-CN/docs/Web/Guide/API/DOM/The_structured_clone_algorithm
-
-
-    
-
-        <a href="/2017/10/17/关于js对象的深浅复制/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
     </div>
     
 </article>
@@ -689,7 +687,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/Guide/API/DOM/The_structured_clone_
 
         <p>
             
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span>
         </p>
     </div>
     <div class="bottom">
