@@ -27,7 +27,7 @@
 <meta property="og:site_name" content="hc.icccc.cc   -   doc2git.com">
 <meta property="og:description" content="Vue 2.0Vue 实例创建一个-Vue-的实例 每个 Vue 应用都是通过 Vue 函数创建一个新的 Vue 实例开始的；   虽然没有完全遵循 MVVM 模型，Vue 的设计无疑受到了它的启发。 因此在文档中经常会使用 vm (ViewModel 的简称) 这个变量名表示 Vue 实例。 当创建一个 Vue 实例时，你可以传入一个选项对象。 作为参考，你也可以在 API 文档 中浏览完整的选">
 <meta property="og:image" content="https://cn.vuejs.org/images/lifecycle.png">
-<meta property="og:updated_time" content="2017-11-07T17:00:11.024Z">
+<meta property="og:updated_time" content="2017-11-08T01:53:38.848Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue文档语录">
 <meta name="twitter:description" content="Vue 2.0Vue 实例创建一个-Vue-的实例 每个 Vue 应用都是通过 Vue 函数创建一个新的 Vue 实例开始的；   虽然没有完全遵循 MVVM 模型，Vue 的设计无疑受到了它的启发。 因此在文档中经常会使用 vm (ViewModel 的简称) 这个变量名表示 Vue 实例。 当创建一个 Vue 实例时，你可以传入一个选项对象。 作为参考，你也可以在 API 文档 中浏览完整的选">
@@ -201,7 +201,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Vue-2-0"><span class="post-toc-number">1.</span> <span class="post-toc-text">Vue 2.0</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Vue-实例"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Vue 实例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建一个-Vue-的实例"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">创建一个-Vue-的实例</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据与方法"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">数据与方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#实例生命周期"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">实例生命周期</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#模板语法"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">模板语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#插值"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">插值</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#文本"><span class="post-toc-number">1.2.1.1.</span> <span class="post-toc-text">文本</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#计算属性和观察者"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">计算属性和观察者</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#计算属性"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">计算属性</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基础例子"><span class="post-toc-number">1.3.1.1.</span> <span class="post-toc-text">基础例子</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#计算属性缓存-vs-方法"><span class="post-toc-number">1.3.1.2.</span> <span class="post-toc-text">计算属性缓存 vs 方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#计算属性-vs-侦听属性"><span class="post-toc-number">1.3.1.3.</span> <span class="post-toc-text">计算属性 vs 侦听属性</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#计算属性的-setter"><span class="post-toc-number">1.3.1.4.</span> <span class="post-toc-text">计算属性的 setter</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#侦听器"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">侦听器</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Class-与-Style-绑定"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Class 与 Style 绑定</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#绑定内联样式"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">绑定内联样式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对象语法"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">#对象语法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数组语法"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">#数组语法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#自动添加前缀"><span class="post-toc-number">1.5.3.</span> <span class="post-toc-text">#自动添加前缀</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#多重值"><span class="post-toc-number">1.5.4.</span> <span class="post-toc-text">#多重值</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Vue-2-0"><span class="post-toc-number">1.</span> <span class="post-toc-text">Vue 2.0</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Vue-实例"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Vue 实例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建一个-Vue-的实例"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">创建一个-Vue-的实例</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据与方法"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">数据与方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#实例生命周期"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">实例生命周期</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#模板语法"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">模板语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#插值"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">插值</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#文本"><span class="post-toc-number">1.2.1.1.</span> <span class="post-toc-text">文本</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#计算属性和观察者"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">计算属性和观察者</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#计算属性"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">计算属性</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基础例子"><span class="post-toc-number">1.3.1.1.</span> <span class="post-toc-text">基础例子</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#计算属性缓存-vs-方法"><span class="post-toc-number">1.3.1.2.</span> <span class="post-toc-text">计算属性缓存 vs 方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#计算属性-vs-侦听属性"><span class="post-toc-number">1.3.1.3.</span> <span class="post-toc-text">计算属性 vs 侦听属性</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#计算属性的-setter"><span class="post-toc-number">1.3.1.4.</span> <span class="post-toc-text">计算属性的 setter</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#侦听器"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">侦听器</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Class-与-Style-绑定"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Class 与 Style 绑定</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#绑定内联样式"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">绑定内联样式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对象语法"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">#对象语法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数组语法"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">#数组语法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#自动添加前缀"><span class="post-toc-number">1.5.3.</span> <span class="post-toc-text">#自动添加前缀</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#多重值"><span class="post-toc-number">1.5.4.</span> <span class="post-toc-text">#多重值</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#条件渲染"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">条件渲染</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#v-if"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text">v-if</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在-lt-template-gt-元素上使用-v-if-条件渲染分组"><span class="post-toc-number">1.6.2.</span> <span class="post-toc-text">在-lt-template-gt-元素上使用-v-if-条件渲染分组</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#v-else"><span class="post-toc-number">1.6.3.</span> <span class="post-toc-text">v-else</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#v-else-if"><span class="post-toc-number">1.6.4.</span> <span class="post-toc-text">v-else-if</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用key管理可复用的元素"><span class="post-toc-number">1.6.5.</span> <span class="post-toc-text">用key管理可复用的元素</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#v-show"><span class="post-toc-number">1.6.6.</span> <span class="post-toc-text">v-show</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#v-if-vs-v-show"><span class="post-toc-number">1.6.7.</span> <span class="post-toc-text">v-if vs v-show</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#v-if与v-for-一起使用"><span class="post-toc-number">1.6.8.</span> <span class="post-toc-text">v-if与v-for-一起使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#列表渲染"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">列表渲染</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用v-for把一个数组对应为一组元素"><span class="post-toc-number">1.7.1.</span> <span class="post-toc-text">用v-for把一个数组对应为一组元素</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一个对象的-v-for"><span class="post-toc-number">1.7.2.</span> <span class="post-toc-text">一个对象的-v-for</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
     
@@ -424,6 +424,110 @@
 </ul>
 </li>
 </ul>
+<h2 id="条件渲染"><a href="#条件渲染" class="headerlink" title="条件渲染"></a>条件渲染</h2><h3 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html#v-if" target="_blank" rel="external">v-if</a></h3><h3 id="在-lt-template-gt-元素上使用-v-if-条件渲染分组"><a href="#在-lt-template-gt-元素上使用-v-if-条件渲染分组" class="headerlink" title="在-lt-template-gt-元素上使用-v-if-条件渲染分组"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html#在-lt-template-gt-元素上使用-v-if-条件渲染分组" target="_blank" rel="external">在-lt-template-gt-元素上使用-v-if-条件渲染分组</a></h3><ul>
+<li>因为 v-if 是一个指令，所以必须将它添加到一个元素上。<ul>
+<li>但是如果想切换多个元素呢？</li>
+<li>此时可以把一个 <template> 元素当做不可见的包裹元素，并在上面使用 v-if。</template></li>
+<li>最终的渲染结果将不包含 <template> 元素。<h3 id="v-else"><a href="#v-else" class="headerlink" title="v-else"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html#v-else" target="_blank" rel="external">v-else</a></h3></template></li>
+</ul>
+</li>
+<li>可以使用 v-else 指令来表示 v-if 的“else 块”;<ul>
+<li>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。<h3 id="v-else-if"><a href="#v-else-if" class="headerlink" title="v-else-if"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html#v-else-if" target="_blank" rel="external">v-else-if</a></h3><blockquote>
+<p>2.1.0 新增</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>v-else-if，顾名思义，充当 v-if 的“else-if 块”，可以连续使用;<ul>
+<li>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后。</li>
+</ul>
+</li>
+</ul>
+<h3 id="用key管理可复用的元素"><a href="#用key管理可复用的元素" class="headerlink" title="用key管理可复用的元素"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html#用-key-管理可复用的元素" target="_blank" rel="external">用key管理可复用的元素</a></h3><ul>
+<li>Vue 会尽可能高效地渲染元素，通常会复用已有元素而不是从头开始渲染。<ul>
+<li>这么做除了使 Vue 变得非常快之外，还有其它一些好处: (局部更新DOM)[笔者注]。</li>
+</ul>
+<ul>
+<li>这样也不总是符合实际需求，<ul>
+<li>所以 Vue 为你提供了一种方式来表达”这两个元素是完全独立的，不要复用它们”(递归替换key属性所在的元素)[笔者注]。</li>
+<li>只需添加一个具有唯一值的 key 属性即可,</li>
+<li>每次切换时，输入框都将被重新渲染。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html#v-show" target="_blank" rel="external">v-show</a></h3><ul>
+<li>另一个用于根据条件展示元素的选项是 v-show 指令。<ul>
+<li>不同的是带有 v-show 的元素始终会被渲染并保留在 DOM 中。</li>
+<li>v-show 只是简单地切换元素的 CSS 属性 display。</li>
+<li>‘注意，v-show 不支持 <template> 元素，也不支持 v-else’。</template></li>
+</ul>
+</li>
+</ul>
+<h3 id="v-if-vs-v-show"><a href="#v-if-vs-v-show" class="headerlink" title="v-if vs v-show"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html#v-if-vs-v-show" target="_blank" rel="external">v-if vs v-show</a></h3><ul>
+<li>v-if 是“真正”的条件渲染，<ul>
+<li>因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建。</li>
+</ul>
+</li>
+<li>v-if 也是惰性的：如果在初始渲染时条件为假，<ul>
+<li>则什么也不做——直到条件第一次变为真时，</li>
+<li>才会开始渲染条件块。</li>
+</ul>
+</li>
+<li>相比之下，v-show 就简单得多——不管初始条件是什么，<ul>
+<li>元素总是会被渲染，</li>
+<li>并且只是简单地基于 CSS 进行切换。</li>
+</ul>
+<ul>
+<li>一般来说，</li>
+</ul>
+<ul>
+<li>v-if 有更高的切换开销，</li>
+<li>而 v-show 有更高的初始渲染开销。</li>
+</ul>
+<ul>
+<li>因此，</li>
+</ul>
+<ul>
+<li>如果需要非常频繁地切换，</li>
+<li>则使用 v-show 较好；</li>
+</ul>
+<ul>
+<li>如果在运行时条件很少改变，</li>
+</ul>
+<ul>
+<li>则使用 v-if 较好。</li>
+</ul>
+</li>
+</ul>
+<h3 id="v-if与v-for-一起使用"><a href="#v-if与v-for-一起使用" class="headerlink" title="v-if与v-for-一起使用"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html#v-if-与-v-for-一起使用" target="_blank" rel="external">v-if与v-for-一起使用</a></h3><ul>
+<li>当 v-if 与 v-for 一起使用时，<ul>
+<li>v-for 具有比 v-if 更高的优先级。</li>
+</ul>
+</li>
+</ul>
+<h2 id="列表渲染"><a href="#列表渲染" class="headerlink" title="列表渲染"></a><a href="https://cn.vuejs.org/v2/guide/list.html" target="_blank" rel="external">列表渲染</a></h2><h3 id="用v-for把一个数组对应为一组元素"><a href="#用v-for把一个数组对应为一组元素" class="headerlink" title="用v-for把一个数组对应为一组元素"></a><a href="https://cn.vuejs.org/v2/guide/list.html#用-v-for-把一个数组对应为一组元素" target="_blank" rel="external">用v-for把一个数组对应为一组元素</a></h3><ul>
+<li>我们用 v-for 指令根据一组数组的选项列表进行渲染。<ul>
+<li>v-for 指令需要使用 item in items 形式的特殊语法，</li>
+<li>items 是源数据数组并且 item 是数组元素迭代的别名。</li>
+</ul>
+</li>
+<li>在 v-for 块中，<ul>
+<li>我们拥有对父作用域属性的完全访问权限。</li>
+<li>v-for 还支持一个可选的第二个参数为当前项的索引。 </li>
+<li>(实战中编译时可能出错,建议不用of,只用in)[笔者注]你也可以用 of 替代 in 作为分隔符，因为它是最接近 JavaScript 迭代器的语法;<h3 id="一个对象的-v-for"><a href="#一个对象的-v-for" class="headerlink" title="一个对象的-v-for"></a><a href="https://cn.vuejs.org/v2/guide/list.html#一个对象的-v-for" target="_blank" rel="external">一个对象的-v-for</a></h3></li>
+</ul>
+</li>
+<li>你也可以用 v-for 通过一个对象的属性来迭代。<ul>
+<li>也可以提供第二个的参数为键名</li>
+<li>第三个参数为索引 <blockquote>
+<p>在遍历对象时，<br>是按 Object.keys() 的结果遍历，<br>但是不能保证它的结果在不同的 JavaScript 引擎下是一致的。 </p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
 
         </div>
 
@@ -431,7 +535,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-11-07T17:00:11.024Z" itemprop="dateUpdated">2017-11-08 01:00:11</time>
+    Last updated: <time datetime="2017-11-08T01:53:38.848Z" itemprop="dateUpdated">2017-11-08 09:53:38</time>
 </span><br>
 
 
